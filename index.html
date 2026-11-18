@@ -396,18 +396,18 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div class="bg-charcoal-900 border border-charcoal-800 rounded-xl p-5">
             <div class="text-xs font-mono text-slate-400">LIVE TREASURY VALUE (CAD)</div>
-            <div id="treasury-total-val" class="text-2xl font-black text-white font-mono mt-1">$252.27 CAD</div>
+            <div id="treasury-total-val" class="text-2xl font-black text-white font-mono mt-1">$398.04 CAD</div>
             <div class="text-xs text-mint-400 font-mono mt-1">3 Live Positions • Real-World Seed</div>
           </div>
           <div class="bg-charcoal-900 border border-charcoal-800 rounded-xl p-5">
             <div class="text-xs font-mono text-slate-400">DRY POWDER (BARGAIN HUNTING)</div>
-            <div class="text-2xl font-black text-mint-400 font-mono mt-1">$174.78 CAD</div>
-            <div class="text-xs text-slate-400 font-mono mt-1">69.3% Cash • 2.5% Monthly Interest</div>
+            <div class="text-2xl font-black text-mint-400 font-mono mt-1">$320.55 CAD</div>
+            <div class="text-xs text-slate-400 font-mono mt-1">80.5% Cash • 2.5% Monthly Interest</div>
           </div>
           <div class="bg-charcoal-900 border border-charcoal-800 rounded-xl p-5">
             <div class="text-xs font-mono text-slate-400">EST. PASSIVE CASHFLOW</div>
-            <div id="treasury-annual-div" class="text-2xl font-black text-white font-mono mt-1">$17.92 / yr</div>
-            <div class="text-xs text-mint-400 font-mono mt-1">~$1.49 / mo (OXLC + Cash Interest)</div>
+            <div id="treasury-annual-div" class="text-2xl font-black text-white font-mono mt-1">$21.56 / yr</div>
+            <div class="text-xs text-mint-400 font-mono mt-1">~$1.80 / mo (OXLC + Cash Interest)</div>
           </div>
           <div class="bg-charcoal-900 border border-charcoal-800 rounded-xl p-5">
             <div class="text-xs font-mono text-slate-400">UPDATE CADENCE</div>
@@ -957,7 +957,7 @@
                   <div class="text-[11px] font-mono text-mint-400 uppercase">Book Discussed in This Episode (Affiliate Support)</div>
                   <div id="ep-book-title" class="text-xs sm:text-sm font-bold text-white">Margin of Safety — Seth A. Klarman (1991 Out-of-Print Cult Classic)</div>
                 </div>
-                <a id="ep-book-link" href="https://associates.amazon.ca/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-mint-400/15 hover:bg-mint-400 hover:text-charcoal-950 text-mint-400 border border-mint-400/40 font-mono font-bold text-xs whitespace-nowrap transition-all">
+                <a id="ep-book-link" href="https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman&amp;tag=republicofwe-20" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-mint-400/15 hover:bg-mint-400 hover:text-charcoal-950 text-mint-400 border border-mint-400/40 font-mono font-bold text-xs whitespace-nowrap transition-all">
                   Check Availability (Affiliate) ↗
                 </a>
               </div>
@@ -1067,7 +1067,7 @@
 
   <!-- Modal: [ Join the Republic ] / Flagship Dispatch Reader -->
   <div id="republic-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-charcoal-900 border border-mint-400/50 rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative">
+    <div class="bg-charcoal-900 border border-mint-400/50 rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
       <button type="button" id="close-modal-btn" class="absolute top-4 right-4 text-slate-400 hover:text-white font-mono text-sm px-2 py-1 rounded bg-charcoal-800">
         ESC ✕
       </button>
@@ -1116,6 +1116,43 @@
           </button>
         </div>
       </div>
+
+      <div id="modal-mint-content" class="hidden space-y-3">
+        <div class="inline-block px-2.5 py-0.5 rounded bg-mint-400/15 text-mint-400 font-mono text-xs">/the-mint • DROP WAITLIST &amp; RESERVATION</div>
+        <h2 id="mint-modal-item-title" class="text-xl sm:text-2xl font-black text-white">Republic Crest Heavyweight Hoodie</h2>
+        <div class="flex items-center gap-2 text-xs font-mono">
+          <span id="mint-modal-item-badge" class="px-2 py-0.5 rounded bg-charcoal-800 text-mint-400 font-bold">PRINT-READY VECTOR</span>
+          <span id="mint-modal-item-price" class="text-slate-300 font-bold">$65 CAD</span>
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Enter your details below to reserve your spot on the drop waitlist. Your reservation logs directly to our Mint waitlist sheet (and automatically enrolls you in <strong>THE WE ACCORD</strong> if you aren't already a Citizen).
+        </p>
+
+        <form id="modal-mint-form" class="space-y-3 pt-1">
+          <input type="hidden" id="mint-modal-item-id" value="" />
+          <div>
+            <label for="mint-modal-name" class="block text-xs font-mono text-slate-300 mb-1">FIRST NAME OR CALLSIGN</label>
+            <input type="text" id="mint-modal-name" required placeholder="e.g. Nick" class="w-full px-3.5 py-2.5 rounded-lg bg-charcoal-950 border border-charcoal-700 text-sm text-white focus:outline-none focus:border-mint-400" />
+          </div>
+          <div>
+            <label for="mint-modal-email" class="block text-xs font-mono text-slate-300 mb-1">EMAIL ADDRESS FOR DROP ALERT</label>
+            <input type="email" id="mint-modal-email" required placeholder="you@mainstreet.com" class="w-full px-3.5 py-2.5 rounded-lg bg-charcoal-950 border border-charcoal-700 text-sm text-white focus:outline-none focus:border-mint-400" />
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="block text-xs font-mono text-slate-300">SIZE / VARIANT PREFERENCE (OPTIONAL — SELECT ANY)</span>
+              <span id="mint-options-count" class="text-[11px] font-mono text-mint-400">0 selected</span>
+            </div>
+            <div id="mint-modal-options-grid" class="grid grid-cols-2 gap-2">
+              <!-- Populated dynamically with item-tailored multi-select checkboxes -->
+            </div>
+          </div>
+          <button type="submit" class="w-full py-3 rounded-xl bg-mint-400 hover:bg-mint-300 text-charcoal-950 font-mono font-extrabold text-xs sm:text-sm mint-glow transition-all">
+            [ Put Me on the Waitlist ]
+          </button>
+        </form>
+        <div id="modal-mint-success" class="hidden mt-3 p-3 rounded-lg bg-mint-400/15 border border-mint-400/40 text-mint-400 text-xs font-mono"></div>
+      </div>
     </div>
   </div>
 
@@ -1127,7 +1164,7 @@
           <span>⚖️ THE NO SH**, SHERLOCK LEGAL DISCLAIMER</span>
         </div>
         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-          We’re two voices with microphones, a cartoon dragon, and a stack of finance books—<strong class="text-white">not your financial advisors, your accountants, your lawyers, or your psychic mediums.</strong> Everything in the Republic of We is strictly for comedy, book criticism, and plain-English education. You are the captain of your own wallet: do your own homework, make your own decisions, and if you bet your rent money because a podcast made a Scrooge McDuck or whoopee cushion joke, that is between you and the universe. <em>(Affiliate disclosure: Some links, like our <a href="https://www.wealthsimple.com/invite/MOPFYX" target="_blank" rel="noopener noreferrer" class="text-mint-400 underline">Wealthsimple</a> and <a href="https://coinbase.com/join/FGP2JND?src=android-link" target="_blank" rel="noopener noreferrer" class="text-mint-400 underline">Coinbase</a> referrals and book links, help keep the Republic's lights on at zero extra cost to you.)</em>
+          We’re two voices with microphones, a cartoon dragon, and a stack of finance books—<strong class="text-white">not your financial advisors, your accountants, your lawyers, or your psychic mediums.</strong> Everything in the Republic of We is strictly for comedy, book criticism, and plain-English education. You are the captain of your own wallet: do your own homework, make your own decisions, and if you bet your rent money because a podcast made a Scrooge McDuck or whoopee cushion joke, that is between you and the universe. <em>(Affiliate disclosure: Some links, like our <a href="https://www.wealthsimple.com/invite/MOPFYX" target="_blank" rel="noopener noreferrer" class="text-mint-400 underline">Wealthsimple</a> and <a href="https://coinbase.com/join/FGP2JND?src=android-link" target="_blank" rel="noopener noreferrer" class="text-mint-400 underline">Coinbase</a> referrals and Amazon Associate book links [ID: republicofwe-20]—as an Amazon Associate we earn from qualifying purchases at zero extra cost to you.)</em>
         </p>
       </div>
     </div>
@@ -1161,7 +1198,7 @@
         name: 'Oxford Lane Capital Corp.',
         sector: 'Monthly Cashflow Engine',
         sharesDisplay: '4 shares @ $5.08 USD',
-        weight: 11.4,
+        weight: 7.2,
         allocatedCad: 28.69,
         yieldDisplay: '47.24% (Paid Monthly)',
         cashflowDisplay: '$13.55 CAD/yr ($1.13/mo)',
@@ -1173,7 +1210,7 @@
         name: 'SNDL Inc.',
         sector: 'Deep-Value Cigar Butt',
         sharesDisplay: '24.687 shares @ $1.40 USD',
-        weight: 19.3,
+        weight: 12.3,
         allocatedCad: 48.80,
         yieldDisplay: '0.49x Book (Value Play)',
         cashflowDisplay: '$0.00/yr (Rebuy Target)',
@@ -1184,13 +1221,13 @@
         ticker: 'CAD CASH',
         name: 'Bargain-Hunting Cash Reserve',
         sector: 'Bargain-Hunting Reserve',
-        sharesDisplay: '$174.78 CAD Dry Powder',
-        weight: 69.3,
-        allocatedCad: 174.78,
+        sharesDisplay: '$320.55 CAD Dry Powder',
+        weight: 80.5,
+        allocatedCad: 320.55,
         yieldDisplay: '2.5% (Monthly Interest)',
-        cashflowDisplay: '$4.37 CAD/yr ($0.36/mo)',
+        cashflowDisplay: '$8.01 CAD/yr ($0.67/mo)',
         growthStreak: 'End-of-Month Fat Pitch Reserve',
-        thesis: 'Nearly 70% of the starting portfolio sits in CAD cash earning 2.5% monthly interest—ready to pounce on beaten-down bargains at the end of the month (combining Seth Klarman’s waiting-in-the-batter’s-box rule with Season 2’s seasonal liquidity drains).'
+        thesis: 'Over 80% of the seed portfolio ($320.55 CAD) sits in CAD cash earning 2.5% monthly interest—ready to pounce on beaten-down bargains at the end of the month (combining Seth Klarman’s waiting-in-the-batter’s-box rule with Season 2’s seasonal liquidity drains).'
       }
     ];
 
@@ -1200,7 +1237,7 @@
         title: "Don't Eat the Trading Sardines (Margin of Safety — Part 1)",
         bookTitle: 'Margin of Safety — Seth A. Klarman (1991 Out-of-Print Cult Classic)',
         bookCta: 'Search Rare Copies on Amazon.ca ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman',
+        bookUrl: 'https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman&tag=republicofwe-20',
         takeaways: [
           'The Alien Casino: Why Wall Street gets paid for how often you pull the slot machine lever, not whether you win.',
           'Trading Sardines vs. Eating Sardines: The classic California fish craze that explains 90% of market bubbles.',
@@ -1220,7 +1257,7 @@
         title: 'Roman Arches, Herd Mentality & Waiting for Your Pitch (Part 2)',
         bookTitle: 'Margin of Safety — Seth A. Klarman (1991 Out-of-Print Cult Classic)',
         bookCta: 'Search Rare Copies on Amazon.ca ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman',
+        bookUrl: 'https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman&tag=republicofwe-20',
         takeaways: [
           'The Lemming Bonus: Why institutional money managers are terrified to stand apart from the crowd.',
           'The Ancient Roman Tremble Factor: Why Roman engineers had to stand directly underneath their stone arches when the scaffolding came down.',
@@ -1238,7 +1275,7 @@
         title: 'Dumpster Diving on Wall Street: Cigar Butts & Spinoffs (Part 3)',
         bookTitle: 'Margin of Safety — Seth A. Klarman (1991 Out-of-Print Cult Classic)',
         bookCta: 'Search Rare Copies on Amazon.ca ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman',
+        bookUrl: 'https://www.amazon.ca/s?k=Margin+of+Safety+Seth+Klarman&tag=republicofwe-20',
         takeaways: [
           'The Clorox Bleach Analyst Tragedy: How the 80/20 rule saves you from analysis paralysis.',
           'Catalysts & Cigar-Butt Liquidations: How City Investing Liquidating Trust paid out 3x in cash.',
@@ -1257,7 +1294,7 @@
         title: 'Unicorns, Bankers & Mr. Big Publisher (Why Nifts & Crypto Aren\'t What You Think)',
         bookTitle: '1984 & Animal Farm — George Orwell (Referenced in Act II)',
         bookCta: 'Get Physical Copy on Amazon.ca (Affiliate) ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=1984+George+Orwell+paperback',
+        bookUrl: 'https://www.amazon.ca/s?k=1984+George+Orwell+paperback&tag=republicofwe-20',
         takeaways: [
           'The Unicorn Stare & Scrooge McDuck\'s Spreadsheet: Why 90% of money is already digital rows on a private bank ledger.',
           'Why We Call Them Nifts: True digital property rights (like a rookie baseball card) vs. revocable corporate rental licenses.',
@@ -1276,7 +1313,7 @@
         title: 'Gum Kingpins, Waxing Cars & Never Give Money to Jimbo (The Little Book — Part 1)',
         bookTitle: 'The Little Book That Beats the Market — Joel Greenblatt (Still In Print!)',
         bookCta: 'Buy Book via Amazon.ca Affiliate Link ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=The+Little+Book+That+Beats+the+Market+Joel+Greenblatt',
+        bookUrl: 'https://www.amazon.ca/s?k=The+Little+Book+That+Beats+the+Market+Joel+Greenblatt&tag=republicofwe-20',
         takeaways: [
           'The Sixth-Grade Gum Cartel: How 11-year-old Jason turns 25-cent gum packs into $3,000 by high school graduation.',
           'The 6% Risk-Free Hurdle: Why every investment has to beat the 10-year government bond.',
@@ -1294,7 +1331,7 @@
         title: 'British Redcoats, Dynamite Factories & Why Billy Gordon\'s Mom Isn\'t the Tooth Fairy (Part 2)',
         bookTitle: 'The Little Book That Beats the Market — Joel Greenblatt (Still In Print!)',
         bookCta: 'Buy Book via Amazon.ca Affiliate Link ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=The+Little+Book+That+Beats+the+Market+Joel+Greenblatt',
+        bookUrl: 'https://www.amazon.ca/s?k=The+Little+Book+That+Beats+the+Market+Joel+Greenblatt&tag=republicofwe-20',
         takeaways: [
           'British Redcoats & The Beauty of Underperformance: Why trailing the market 5 months out of 12 scares away impatient Wall Street pros and preserves the bargains.',
           'The 9-Billion-Pound Barge & 3-Year Guarantee: Holding Magic Formula portfolios over 169 rolling 3-year periods made money 100% of the time.',
@@ -1316,7 +1353,7 @@
         title: 'The Toothpaste Tube, The Dodge Viper & Paying You, Inc. First (Profit First)',
         bookTitle: 'Profit First — Mike Michalowicz (Still In Print!)',
         bookCta: 'Buy Book via Amazon.ca Affiliate Link ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=Profit+First+Mike+Michalowicz',
+        bookUrl: 'https://www.amazon.ca/s?k=Profit+First+Mike+Michalowicz&tag=republicofwe-20',
         takeaways: [
           'The Broken Formula & The Porcelain Piggy Bank: Why Income minus Expenses equals Savings always leaves $0—and how flipping it to Paycheck minus Profit FIRST changes everything.',
           'Parkinson’s Law & The Toothpaste Tube: Why humans waste toothpaste like emperors when the tube is full and turn into MacGyver when the tube is flat.',
@@ -1362,7 +1399,7 @@
         title: 'The New Year’s Eve Clearance Rack: Tax-Loss Dumping, Window Dressing & The Incredible January Effect',
         bookTitle: 'The Incredible January Effect — Robert A. Haugen & Josef Lakonishok (1988)',
         bookCta: 'Search Copies on Amazon.ca ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=The+Incredible+January+Effect+Haugen+Lakonishok',
+        bookUrl: 'https://www.amazon.ca/s?k=The+Incredible+January+Effect+Haugen+Lakonishok&tag=republicofwe-20',
         takeaways: [
           'The Calendar Glitch That Broke the Ivory Tower: How 70 years of NYSE data (1904–1974) showed beaten-down small-cap stocks surging every January while Efficient Market professors panicked.',
           'Suspect #1 — Year-End Tax-Loss Selling: Millions of individual investors dumping their biggest losers before December 31st for a tax write-off.',
@@ -1385,7 +1422,7 @@
         title: 'Blue Mondays, Payday Pumps & The Unified Theory of Market Weirdness (Cataldo & Savage)',
         bookTitle: 'The January Effect and Other Seasonal Anomalies — Anthony J. Cataldo II & Arline A. Savage (2000)',
         bookCta: 'Search Rare Academic Copies on Amazon.ca ↗',
-        bookUrl: 'https://www.amazon.ca/s?k=The+January+Effect+and+Other+Seasonal+Anomalies+Cataldo+Savage',
+        bookUrl: 'https://www.amazon.ca/s?k=The+January+Effect+and+Other+Seasonal+Anomalies+Cataldo+Savage&tag=republicofwe-20',
         takeaways: [
           'The $20 Bargain-Bin Unicorn & The Zoo of Calendar Glitches: Scoring a $200–$700 university research tome in a secondhand bargain bin for $20, unpacking Blue Mondays, the Turn-of-the-Month Payday Pump, Pre-Holiday Surges & the April Tax Crunch.',
           'Keynes’s 3 Buckets of Cash (Liquidity Preference Theory): How the Transactions Bucket (bills/taxes), Precautionary Bucket (weekend nerves), and Speculative Bucket (investing) explain every seasonal glitch.',
@@ -1743,7 +1780,7 @@
             <span>${ep.seriesTag}</span>
           </div>
           <h3 class="text-sm font-bold text-white">${ep.shortTitle}</h3>
-          <p class="text-xs text-slate-400 mt-0.5 line-clamp-2">${ep.shortDesc}</p>
+          <p class="text-xs text-slate-400 mt-0.5 whitespace-normal break-words leading-relaxed">${ep.shortDesc}</p>
         `;
         btn.addEventListener('click', () => selectEpisode(idx));
         container.appendChild(btn);
@@ -1848,15 +1885,45 @@
     const modal = document.getElementById('republic-modal');
     const modalJoinContent = document.getElementById('modal-join-content');
     const modalDispatchContent = document.getElementById('modal-dispatch-content');
+    const modalMintContent = document.getElementById('modal-mint-content');
+    let currentMintFilter = 'ALL';
 
-    function openModal(mode) {
+    function getSavedCitizenProfile() {
+      try {
+        const raw = localStorage.getItem('row_citizen_profile');
+        return raw ? JSON.parse(raw) : { name: '', email: '' };
+      } catch (e) {
+        return { name: '', email: '' };
+      }
+    }
+
+    function saveCitizenProfile(name, email) {
+      try {
+        localStorage.setItem('row_citizen_profile', JSON.stringify({ name: name || 'Citizen', email }));
+      } catch (e) {}
+    }
+
+    function openModal(mode, mintItem) {
       modal.classList.remove('hidden');
-      if (mode === 'join') {
-        modalJoinContent.classList.remove('hidden');
-        modalDispatchContent.classList.add('hidden');
-      } else {
-        modalJoinContent.classList.add('hidden');
-        modalDispatchContent.classList.remove('hidden');
+      modalJoinContent.classList.toggle('hidden', mode !== 'join');
+      modalDispatchContent.classList.toggle('hidden', mode !== 'dispatch');
+      if (modalMintContent) {
+        modalMintContent.classList.toggle('hidden', mode !== 'mint');
+      }
+      if (mode === 'mint' && mintItem) {
+        document.getElementById('mint-modal-item-id').value = mintItem.id;
+        document.getElementById('mint-modal-item-title').textContent = mintItem.title;
+        document.getElementById('mint-modal-item-badge').textContent = mintItem.badge;
+        document.getElementById('mint-modal-item-price').textContent = mintItem.price;
+        document.getElementById('modal-mint-success').classList.add('hidden');
+        renderMintModalOptions(mintItem);
+        const prof = getSavedCitizenProfile();
+        if (prof.name && !document.getElementById('mint-modal-name').value) {
+          document.getElementById('mint-modal-name').value = prof.name;
+        }
+        if (prof.email && !document.getElementById('mint-modal-email').value) {
+          document.getElementById('mint-modal-email').value = prof.email;
+        }
       }
     }
 
@@ -1877,7 +1944,7 @@
 
     // ==================== WE ACCORD SIGNUP WEBHOOK (GOOGLE SHEETS / GMASS) ====================
     // Paste your deployed Google Apps Script Web App URL inside the quotes below:
-    const WE_ACCORD_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyo5FsxvIYN5T4wJ7YjnDuWeAXDINlZL4srcRejJLJpdK0Q2RT7Z_z09zlRTitQ_SM2/exec';
+    const WE_ACCORD_WEBHOOK_URL = '';
 
     async function submitCitizenToWebhook(payload) {
       if (!WE_ACCORD_WEBHOOK_URL) return;
@@ -1897,6 +1964,7 @@
       e.preventDefault();
       const email = document.getElementById('home-accord-email').value.trim();
       const fb = document.getElementById('home-accord-feedback');
+      saveCitizenProfile('Citizen', email);
       submitCitizenToWebhook({ name: 'Citizen', email, source: 'home_hero_card', timestamp: new Date().toISOString() });
       fb.textContent = `Welcome to the Republic! ${email} is enrolled in THE WE ACCORD.`;
       fb.classList.remove('hidden');
@@ -1908,10 +1976,82 @@
       const name = document.getElementById('modal-name').value.trim();
       const email = document.getElementById('modal-email').value.trim();
       const box = document.getElementById('modal-join-success');
+      saveCitizenProfile(name, email);
       submitCitizenToWebhook({ name, email, source: 'join_republic_modal', timestamp: new Date().toISOString() });
       box.textContent = `Citizen ${name} (${email}) registered! Welcome to the Republic of We.`;
       box.classList.remove('hidden');
       document.getElementById('modal-join-form').reset();
+    });
+
+    function updateMintOptionsCount() {
+      const checked = document.querySelectorAll('.mint-option-checkbox:checked');
+      const countEl = document.getElementById('mint-options-count');
+      if (countEl) {
+        countEl.textContent = checked.length === 0 ? '0 selected' : `${checked.length} selected`;
+      }
+      document.querySelectorAll('.mint-option-pill').forEach(label => {
+        const cb = label.querySelector('.mint-option-checkbox');
+        if (cb && cb.checked) {
+          label.className = 'mint-option-pill flex items-start gap-2.5 px-3 py-2.5 rounded-lg bg-mint-400/15 border border-mint-400 text-mint-400 font-mono text-xs cursor-pointer select-none transition-all';
+        } else {
+          label.className = 'mint-option-pill flex items-start gap-2.5 px-3 py-2.5 rounded-lg bg-charcoal-950 border border-charcoal-700 hover:border-charcoal-600 text-slate-300 font-mono text-xs cursor-pointer select-none transition-all';
+        }
+      });
+    }
+
+    function renderMintModalOptions(mintItem) {
+      const grid = document.getElementById('mint-modal-options-grid');
+      if (!grid) return;
+      const opts = (mintItem && mintItem.options) || [
+        'Size S', 'Size M', 'Size L', 'Size XL', 'Size 2XL', 'Charcoal / Mint', 'White Text Crest', 'Black Text Crest'
+      ];
+      grid.innerHTML = '';
+      opts.forEach(optText => {
+        const label = document.createElement('label');
+        label.className = 'mint-option-pill flex items-start gap-2.5 px-3 py-2.5 rounded-lg bg-charcoal-950 border border-charcoal-700 hover:border-charcoal-600 text-slate-300 font-mono text-xs cursor-pointer select-none transition-all';
+        label.innerHTML = `
+          <input type="checkbox" value="${optText}" class="mint-option-checkbox mt-0.5 w-3.5 h-3.5 rounded accent-[#00E599] bg-charcoal-900 border-charcoal-600 cursor-pointer shrink-0" />
+          <span class="whitespace-normal break-words leading-snug">${optText}</span>
+        `;
+        const cb = label.querySelector('.mint-option-checkbox');
+        cb.addEventListener('change', updateMintOptionsCount);
+        grid.appendChild(label);
+      });
+      updateMintOptionsCount();
+    }
+
+    document.getElementById('modal-mint-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const itemId = document.getElementById('mint-modal-item-id').value;
+      const itemObj = mintItems.find(i => i.id === itemId) || { id: itemId, title: itemId, price: '' };
+      const name = document.getElementById('mint-modal-name').value.trim();
+      const email = document.getElementById('mint-modal-email').value.trim();
+      const selectedOptions = Array.from(document.querySelectorAll('.mint-option-checkbox:checked')).map(cb => cb.value);
+      const notes = selectedOptions.join(', ');
+      const box = document.getElementById('modal-mint-success');
+
+      saveCitizenProfile(name, email);
+      reservedMintIds.add(itemObj.id);
+      renderMintCatalog(currentMintFilter);
+
+      submitCitizenToWebhook({
+        type: 'mint_waitlist',
+        name,
+        email,
+        itemId: itemObj.id,
+        itemTitle: itemObj.title,
+        itemPrice: itemObj.price,
+        notes,
+        selectedOptions,
+        source: `mint_waitlist:${itemObj.id}`,
+        timestamp: new Date().toISOString()
+      });
+
+      const prefsSummary = selectedOptions.length ? ` [${selectedOptions.join(', ')}]` : '';
+      box.textContent = `✓ ${name} (${email}) added to the ${itemObj.title} drop waitlist${prefsSummary}!`;
+      box.classList.remove('hidden');
+      document.querySelectorAll('.mint-option-checkbox').forEach(cb => { cb.checked = false; });
+      updateMintOptionsCount();
     });
 
     // ==================== GHOST MONEY FINDER (POCKET LIBERATION) ====================
@@ -1984,7 +2124,8 @@
         category: 'Apparel & Gear',
         price: '$65 CAD',
         badge: 'PRINT-READY VECTOR',
-        desc: 'Deep charcoal fleece featuring the transparent Mint Dragon emblem on the chest and Passive Income for the People on the back.'
+        desc: 'Deep charcoal fleece featuring the transparent Mint Dragon emblem on the chest and Passive Income for the People on the back.',
+        options: ['Size S', 'Size M', 'Size L', 'Size XL', 'Size 2XL', 'Size 3XL', 'Charcoal + White Text Crest', 'Mint / Light + Black Text Crest']
       },
       {
         id: 'sardine-tee',
@@ -1992,7 +2133,8 @@
         category: 'Apparel & Gear',
         price: '$32 CAD',
         badge: 'EPISODE 01 DROP',
-        desc: "Ultra-soft ringspun tee inspired by Seth Klarman's Monterey sardine story. 100% eating sardines, 0% Wall Street slop."
+        desc: "Ultra-soft ringspun tee inspired by Seth Klarman's Monterey sardine story. 100% eating sardines, 0% Wall Street slop.",
+        options: ['Size S', 'Size M', 'Size L', 'Size XL', 'Size 2XL', 'Size 3XL', 'Charcoal + White Text Crest', 'Light Grey + Black Text Crest']
       },
       {
         id: 'founding-citizen-nift',
@@ -2000,7 +2142,8 @@
         category: 'Citizen Nifts & Coins',
         price: '$25 CAD',
         badge: 'TRUE DIGITAL OWNERSHIP',
-        desc: 'Programmable digital deed unlocking 48-hour early episode access, book-roast voting rights, and the @FoundingDragon Discord role.'
+        desc: 'Programmable digital deed unlocking 48-hour early episode access, book-roast voting rights, and the @FoundingDragon Discord role.',
+        options: ['48-Hr Early Episode Access', 'Book-Roast Voting Rights', '@FoundingDragon Discord Role', 'Self-Custody Wallet Mint', 'Email-Linked Claim (No Wallet Needed)', 'Gift an Extra Pass']
       },
       {
         id: 'republic-mint-coin',
@@ -2008,7 +2151,8 @@
         category: 'Citizen Nifts & Coins',
         price: '$10 CAD',
         badge: 'COMMUNITY PERKS',
-        desc: 'In-store tokens to unlock bonus uncut Nick & Bex audio takes, custom Assembly badges, and priority Q&A submissions.'
+        desc: 'In-store tokens to unlock bonus uncut Nick & Bex audio takes, custom Assembly badges, and priority Q&A submissions.',
+        options: ['500 Coins ($10 Pack)', '1,200 Coins ($20 Bonus Pack)', 'Uncut Nick & Bex Outtakes', 'Custom Assembly Flair', 'Priority Book Q&A Vote', 'Discord Role Perks']
       },
       {
         id: 'bex-mug',
@@ -2016,7 +2160,8 @@
         category: 'Apparel & Gear',
         price: '$22 CAD',
         badge: 'EPISODE 04 DROP',
-        desc: 'Matte black ceramic mug with mint-green interior and the Republic Dragon crest. Built for morning dividend checks.'
+        desc: 'Matte black ceramic mug with mint-green interior and the Republic Dragon crest. Built for morning dividend checks.',
+        options: ['11 oz Standard Studio Mug', '15 oz Large Caffeinated Mug', 'Matte Black + Mint Interior', '2-Mug Studio Bundle', 'White Text Dragon Crest', 'Standalone Dragon Icon']
       },
       {
         id: 'snowball-tracker-sheet',
@@ -2024,13 +2169,15 @@
         category: 'Digital Blueprints',
         price: 'FREE / $5 TIP',
         badge: 'INSTANT DOWNLOAD',
-        desc: 'Plug-and-play Google Sheets & Excel tracker for logging your monthly DRIP payouts, Ghost Money audits, and Magic Formula screens.'
+        desc: 'Plug-and-play Google Sheets & Excel tracker for logging your monthly DRIP payouts, Ghost Money audits, and Magic Formula screens.',
+        options: ['Google Sheets Version', 'Microsoft Excel (.xlsx)', 'Free Citizen Download ($0)', 'Add $5 Coffee Tip for Nick & Bex', 'Include Profit First 4-Plate Tab', 'Include Magic Formula Screener Tab']
       }
     ];
 
     const reservedMintIds = new Set();
 
     function renderMintCatalog(catFilter = 'ALL') {
+      currentMintFilter = catFilter;
       const grid = document.getElementById('mint-catalog-grid');
       if (!grid) return;
       grid.innerHTML = '';
@@ -2054,7 +2201,7 @@
               ? 'bg-mint-400 text-charcoal-950'
               : 'bg-charcoal-800 hover:bg-mint-400 hover:text-charcoal-950 text-mint-400 border border-mint-400/30'
           }">
-            ${isReserved ? '✓ Added to Early-Notify List' : 'Notify Me on Drop / Reserve →'}
+            ${isReserved ? '✓ Added to Early-Notify Waitlist (Update →)' : 'Notify Me on Drop / Reserve →'}
           </button>
         `;
         grid.appendChild(card);
@@ -2063,12 +2210,10 @@
       grid.querySelectorAll('.mint-reserve-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.getAttribute('data-mint-id');
-          if (reservedMintIds.has(id)) {
-            reservedMintIds.delete(id);
-          } else {
-            reservedMintIds.add(id);
+          const itemObj = mintItems.find(i => i.id === id);
+          if (itemObj) {
+            openModal('mint', itemObj);
           }
-          renderMintCatalog(catFilter);
         });
       });
     }
